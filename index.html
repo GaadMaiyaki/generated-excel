@@ -7433,7 +7433,7 @@
           if (row.amount.length == 0) {
             var parsedAmount = 0
           } else {
-              var parsedAmount = parseFloat(row.amount)
+              var parsedAmount = parseInt(row.amount)
           };
           return {
             accountTypeCurrency: `${parsedAccounts[row.account].AccountType}-${
