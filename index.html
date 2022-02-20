@@ -7469,12 +7469,12 @@
             
           
             setOfDates.forEach((date) => {
-              transactionSumByMonths[date] = 0;
+              transactionSumByMonths[date] = "";
               
               finalArray.forEach((trans) => {
                 if ((trans.date == date) && (trans.accountTypeCurrency == acc_type )) {
                   console.log(`the date is ${date} and amount is ${trans.amount} and  account_type is ${acc_curr}`)
-                  transactionSumByMonths[date] += trans.amount 
+                  transactionSumByMonths[date] += trans.amount || 0;
                 } else {
                   return;
                 }
