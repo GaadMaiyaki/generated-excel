@@ -7469,7 +7469,7 @@
             
           
             setOfDates.forEach((date) => {
-              transactionSumByMonths[date] = 0
+              transactionSumByMonths[date] = "_"
               
               finalArray.forEach((trans) => {
                 if ((trans.date == date) && (trans.accountTypeCurrency == acc_type )) {
