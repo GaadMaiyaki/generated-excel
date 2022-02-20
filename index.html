@@ -7555,9 +7555,9 @@
       $("#download-file").click(function(){
           var rowOfRowsString= $('#hiddendata').text();
           var csv = JSON.parse(rowOfRowsString);
-          downloadBlob(csv, 'export.xls', 'text/xls;charset=utf-8;')
+          downloadBlob(csv, 'export.pdf', 'text/pdf;charset=utf-8;')
         });
-//      downloadBlob(csv, 'export.xls', 'text/csv;charset=utf-8;')
+//      downloadBlob(csv, 'export.pdf', 'textpdf;charset=utf-8;')
     });
 
   </script>
