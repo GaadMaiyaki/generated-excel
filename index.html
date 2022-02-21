@@ -7431,7 +7431,7 @@
       function generateCSV(parsedAccounts, finalArrayTransactions) {
         var finalArray = finalArrayTransactions.map((row) => {
           if (row.amount.length == 0) {
-            var parsedAmount = "";
+            var parsedAmount = 0;
           } else {
               var parsedAmount = parseInt(row.amount)
           };
